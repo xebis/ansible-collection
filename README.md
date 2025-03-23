@@ -15,6 +15,9 @@ A collection of Ansible roles.
 ### Development
 
 ```shell
+GALAXY_BUILD_OUTPUT=$(ansible-galaxy collection build --force)
+ansible-galaxy collection install --force "${GALAXY_BUILD_OUTPUT##* }"
+
 ansible-playbook local.yaml -i localhost,
 ```
 

@@ -1,0 +1,18 @@
+---
+namespace: xebis
+name: ansible
+version: 0.1.0
+readme: README.md
+authors:
+  - Martin Bružina
+description: A collection of Ansible roles.
+license:
+  - MIT
+license_file: LICENSE
+tags:
+  - kubuntu
+  - linux
+  - ubuntu
+repository: https://github.com/xebis/ansible-collection
+homepage: https://github.com/xebis/ansible-collection
+issues: https://github.com/xebis/ansible-collection/issues
