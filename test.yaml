@@ -1,0 +1,10 @@
+---
+- hosts: all
+  roles:
+    - role: xebis.ansible.apt
+      vars:
+        autoclean: true
+        autoremove: true
+        cache_valid_time: 3600
+        purge: true
+        upgrade: "full"
