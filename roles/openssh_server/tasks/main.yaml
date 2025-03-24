@@ -1,0 +1,23 @@
+---
+- name: Install OpenSSH server
+  become: true
+  ansible.builtin.apt:
+    name: openssh-server
+    state: present
+
+- name: Disable root SSH login
+  become: true
+  ansible.builtin.lineinfile:
+    dest: /etc/ssh/sshd_config
+    regexp: ^#?PermitRootLogin
+    line: PermitRootLogin no
+    state: present
+  notify: Restart ssh
+
+- name: Disable empty password SSH login
+  become: true
+  ansible.builtin.lineinfile:
+    dest: /etc/ssh/sshd_config
+    regexp: ^#?PermitEmptyPasswords
+    line: PermitEmptyPasswords no
+  notify: Restart ssh

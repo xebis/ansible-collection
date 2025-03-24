@@ -1,0 +1,7 @@
+---
+- name: Restart OpenSSH daemon
+  become: true
+  ansible.builtin.service:
+    name: ssh
+    state: restarted
+  listen: Restart ssh
