@@ -8,3 +8,4 @@
         cache_valid_time: 3600
         purge: true
         upgrade: "full"
+    - role: xebis.ansible.openssh_server
