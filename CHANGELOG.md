@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.3.0](https://github.com/xebis/ansible-collection/compare/v0.2.0...v0.3.0) (2025-03-24)
+
+### Features
+
+* add apt upgrade and system reboot handlers ([3450d0d](https://github.com/xebis/ansible-collection/commit/3450d0dfa733724d9448ee056b2d94f599d446b1))
+
 ## [0.2.0](https://github.com/xebis/ansible-collection/compare/v0.1.0...v0.2.0) (2025-03-23)
 
 ### Features
