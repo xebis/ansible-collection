@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.4.0](https://github.com/xebis/ansible-collection/compare/v0.3.0...v0.4.0) (2025-03-25)
+
+### Features
+
+* add openssh_server role ([89ddc1d](https://github.com/xebis/ansible-collection/commit/89ddc1d52ad000b74ce85060d9c08356136b4377))
+
 ## [0.3.0](https://github.com/xebis/ansible-collection/compare/v0.2.0...v0.3.0) (2025-03-24)
 
 ### Features
