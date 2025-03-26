@@ -1,6 +1,0 @@
----
-autoclean: omit
-autoremove: omit
-cache_valid_time: omit
-purge: omit
-upgrade: omit
