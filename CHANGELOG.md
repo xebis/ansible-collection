@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.4.1](https://github.com/xebis/ansible-collection/compare/v0.4.0...v0.4.1) (2025-03-27)
+
+### Bug Fixes
+
+* omit is passed as literal string ([f7c2ceb](https://github.com/xebis/ansible-collection/commit/f7c2ceb700f075708240094079338bbd3547f734))
+
 ## [0.4.0](https://github.com/xebis/ansible-collection/compare/v0.3.0...v0.4.0) (2025-03-25)
 
 ### Features
