@@ -1,0 +1,61 @@
+---
+- name: Add user groups
+  become: true
+  ansible.builtin.group:
+    name: "{{ item.user }}"
+    state: present
+  loop: "{{ users }}"
+
+- name: Add sudo group as passwordless sudoer
+  become: true
+  ansible.builtin.lineinfile:
+    dest: /etc/sudoers.d/xebis-ansible-users
+    create: true
+    regexp: ^%sudo
+    line: "%sudo ALL=(ALL) NOPASSWD: ALL"
+    state: present
+    validate: visudo -cf %s
+  when: passwordless_sudo | default(false)
+
+- name: Add admins
+  become: true
+  ansible.builtin.user:
+    name: "{{ item.user }}"
+    group: "{{ item.user }}"
+    groups:
+      - sudo
+      - users
+    shell: /bin/bash
+    state: present
+  loop: "{{ users }}"
+  when: item.admin
+
+- name: Add users
+  become: true
+  ansible.builtin.user:
+    name: "{{ item.user }}"
+    group: "{{ item.user }}"
+    groups:
+      - users
+    shell: /bin/bash
+    state: present
+  loop: "{{ users }}"
+  when: not item.admin
+
+- name: Add SSH authorized key lists
+  become: true
+  ansible.posix.authorized_key:
+    user: "{{ item.0.user }}"
+    key: "{{ lookup('url', item.1, split_lines=False) }}"
+    state: present
+  loop: "{{ users | subelements('ssh_keys_urls', skip_missing=true) }}"
+  notify: Disable password SSH login
+
+- name: Add SSH authorized keys
+  become: true
+  ansible.posix.authorized_key:
+    user: "{{ item.0.user }}"
+    key: "{{ item.1 }}"
+    state: present
+  loop: "{{ users | subelements('ssh_keys', skip_missing=true) }}"
+  notify: Disable password SSH login
