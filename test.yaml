@@ -9,3 +9,12 @@
         purge: true
         upgrade: "full"
     - role: xebis.ansible.openssh_server
+    - role: xebis.ansible.users
+      vars:
+        passwordless_sudo: true
+        ssh_password_login: false
+        users:
+          - user: mb
+            admin: true
+            ssh_keys_urls:
+              - https://github.com/bruzina.keys
