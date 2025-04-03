@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.5.0](https://github.com/xebis/ansible-collection/compare/v0.4.1...v0.5.0) (2025-04-03)
+
+### Features
+
+* add users role ([9ba7b5b](https://github.com/xebis/ansible-collection/commit/9ba7b5b46f9116b6b21007b8f08e94e02cbe23d7))
+
 ## [0.4.1](https://github.com/xebis/ansible-collection/compare/v0.4.0...v0.4.1) (2025-03-27)
 
 ### Bug Fixes
