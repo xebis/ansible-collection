@@ -13,6 +13,47 @@ This Ansible collection provides a set of roles designed for configuring Kubuntu
 | [xebis.ansible.system](roles/system/README.md) | System-related tasks such as reboot handler or reboot when required handler.                                                               |                                |
 | [`xebis.ansible.users`](roles/users/README.md) | Ansible role for managing system users.                                                                                                    | `xebis.ansible.openssh_server` |
 
+## Installation and Configuration
+
+Add to `requirements.yaml`:
+
+```yaml
+---
+collections:
+  - name: git+https://github.com/xebis/ansible-collection.git,main
+```
+
+Install dependencies:
+
+```shell
+ansible-galaxy collection install -r requirements.yaml
+```
+
+## Usage
+
+Create an Ansible playbook:
+
+```yaml
+---
+- hosts: all
+  roles:
+    - role: xebis.ansible.apt
+      vars:
+        autoclean: true
+        autoremove: true
+        cache_valid_time: 3600
+        purge: true
+        upgrade: "full"
+```
+
+Refer to the example playbook [test.yaml](test.yaml) for additional inspiration.
+
+Run the Ansible playbook:
+
+```shell
+ansible-playbook -i localhost, playbook.yaml
+```
+
 ## Contributing
 
 ### Development
