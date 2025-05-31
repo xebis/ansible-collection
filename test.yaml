@@ -8,6 +8,7 @@
         cache_valid_time: 3600
         purge: true
         upgrade: "full"
+    - role: xebis.ansible.nftables_firewall
     - role: xebis.ansible.openssh_server
     - role: xebis.ansible.users
       vars:
