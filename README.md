@@ -6,12 +6,13 @@ This Ansible collection provides a set of roles designed for configuring Kubuntu
 
 ### Roles
 
-| Role                                           | Description                                                                                                                                | Dependencies                   |
-| ---------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------ |
-| [xebis.ansible.apt](roles/apt/README.md)       | Deb package updates and upgrades using the apt package manager. Can optionally clean up unused packages and reboot the system if required. | `xebis.ansible.system`         |
-| `xebis.ansible.openssh_server`                 | Installs OpenSSH server installation and provides `Restart ssh` handler.                                                                   | `xebis.ansible.apt`            |
-| [xebis.ansible.system](roles/system/README.md) | System-related tasks such as reboot handler or reboot when required handler.                                                               |                                |
-| [`xebis.ansible.users`](roles/users/README.md) | Ansible role for managing system users.                                                                                                    | `xebis.ansible.openssh_server` |
+| Role                                                                 | Description                                                                                                                                | Dependencies                   |
+| -------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------ |
+| [xebis.ansible.apt](roles/apt/README.md)                             | Deb package updates and upgrades using the apt package manager. Can optionally clean up unused packages and reboot the system if required. | `xebis.ansible.system`         |
+| [xebis.ansible.nftables_firewall](roles/nftables_firewall/README.md) | nftables firewall                                                                                                                          | `xebis.ansible.apt`            |
+| `xebis.ansible.openssh_server`                                       | Installs OpenSSH server and provides `Restart ssh` handler.                                                                                | `xebis.ansible.apt`            |
+| [xebis.ansible.system](roles/system/README.md)                       | System-related tasks such as reboot handler or reboot when required handler.                                                               |                                |
+| [`xebis.ansible.users`](roles/users/README.md)                       | Ansible role for managing system users.                                                                                                    | `xebis.ansible.openssh_server` |
 
 ## Installation and Configuration
 
