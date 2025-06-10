@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.6.0](https://github.com/xebis/ansible-collection/compare/v0.5.0...v0.6.0) (2025-06-10)
+
+### Features
+
+* nftables firewall ([d7cf1bb](https://github.com/xebis/ansible-collection/commit/d7cf1bbee542b03a9c23d1f3ee4f4df0120f097e))
+
 ## [0.5.0](https://github.com/xebis/ansible-collection/compare/v0.4.1...v0.5.0) (2025-04-03)
 
 ### Features
