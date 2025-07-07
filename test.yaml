@@ -12,6 +12,7 @@
       vars:
         nftables_firewall_log_rejected: true
     - role: xebis.ansible.openssh_server
+    - role: xebis.ansible.fail2ban
     - role: xebis.ansible.users
       vars:
         passwordless_sudo: true
