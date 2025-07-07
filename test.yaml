@@ -9,6 +9,8 @@
         purge: true
         upgrade: "full"
     - role: xebis.ansible.nftables_firewall
+      vars:
+        nftables_firewall_log_rejected: true
     - role: xebis.ansible.openssh_server
     - role: xebis.ansible.users
       vars:
