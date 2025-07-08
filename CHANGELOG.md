@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.7.0](https://github.com/xebis/ansible-collection/compare/v0.6.0...v0.7.0) (2025-07-08)
+
+### Features
+
+* add fail2ban role ([0575b92](https://github.com/xebis/ansible-collection/commit/0575b928deb8e176bb1293c3853e3ad70a1779d0))
+
 ## [0.6.0](https://github.com/xebis/ansible-collection/compare/v0.5.0...v0.6.0) (2025-06-10)
 
 ### Features
