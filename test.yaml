@@ -1,6 +1,9 @@
 ---
 - hosts: all
   roles:
+    - role: xebis.ansible.grub
+      vars:
+        menu_timeout: 15
     - role: xebis.ansible.apt
       vars:
         autoclean: true
