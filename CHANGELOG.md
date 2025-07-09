@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.8.0](https://github.com/xebis/ansible-collection/compare/v0.7.0...v0.8.0) (2025-07-09)
+
+### Features
+
+* add grub role ([0a8c8d1](https://github.com/xebis/ansible-collection/commit/0a8c8d1c905f2f0546f9f7127ef305dae66ba9da))
+
 ## [0.7.0](https://github.com/xebis/ansible-collection/compare/v0.6.0...v0.7.0) (2025-07-08)
 
 ### Features
