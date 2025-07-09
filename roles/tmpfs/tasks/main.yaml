@@ -1,0 +1,19 @@
+---
+- name: Add Ansible managed section separator to /etc/fstab
+  become: true
+  ansible.builtin.lineinfile:
+    path: /etc/fstab
+    line: "# Ansible managed"
+    state: present
+  when: tmpfs_dirs | length > 0
+
+- name: Set directories to mount as tmpfs
+  become: true
+  ansible.builtin.lineinfile:
+    path: /etc/fstab
+    regexp: "^\\s*tmpfs\\s+{{ item }}"
+    line: "tmpfs {{ item }} tmpfs rw,nosuid,nodev"
+    create: false
+    state: present
+  loop: "{{ tmpfs_dirs | default([]) }}"
+  notify: Reboot system
