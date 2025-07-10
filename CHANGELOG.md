@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.9.0](https://github.com/xebis/ansible-collection/compare/v0.8.0...v0.9.0) (2025-07-10)
+
+### Features
+
+* add tmpfs role ([903d516](https://github.com/xebis/ansible-collection/commit/903d5166d336c49aa9f085737a764a19b3916c60))
+
 ## [0.8.0](https://github.com/xebis/ansible-collection/compare/v0.7.0...v0.8.0) (2025-07-09)
 
 ### Features
