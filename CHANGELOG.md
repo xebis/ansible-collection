@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.10.0](https://github.com/xebis/ansible-collection/compare/v0.9.0...v0.10.0) (2025-08-19)
+
+### Features
+
+* add snapd role ([e925cc2](https://github.com/xebis/ansible-collection/commit/e925cc2459fd259bb99f09a98b0d167a301b20d8))
+
 ## [0.9.0](https://github.com/xebis/ansible-collection/compare/v0.8.0...v0.9.0) (2025-07-10)
 
 ### Features
