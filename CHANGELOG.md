@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.11.0](https://github.com/xebis/ansible-collection/compare/v0.10.0...v0.11.0) (2025-08-22)
+
+### Features
+
+* add obsidian role ([d7219d9](https://github.com/xebis/ansible-collection/commit/d7219d9272848c43aafa95cb5555c818aea74a62))
+
 ## [0.10.0](https://github.com/xebis/ansible-collection/compare/v0.9.0...v0.10.0) (2025-08-19)
 
 ### Features
