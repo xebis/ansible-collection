@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.12.0](https://github.com/xebis/ansible-collection/compare/v0.11.0...v0.12.0) (2025-08-23)
+
+### Features
+
+* add google chrome role ([11b7028](https://github.com/xebis/ansible-collection/commit/11b7028af3483e5caaa96a195a9dc063c565a091))
+
 ## [0.11.0](https://github.com/xebis/ansible-collection/compare/v0.10.0...v0.11.0) (2025-08-22)
 
 ### Features
