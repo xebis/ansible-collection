@@ -31,3 +31,4 @@
               - https://github.com/bruzina.keys
     - role: xebis.ansible.google_chrome
     - role: xebis.ansible.obsidian
+    - role: xebis.ansible.visual_studio_code

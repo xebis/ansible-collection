@@ -19,6 +19,7 @@ This Ansible collection provides a set of roles designed for configuring Kubuntu
 | [xebis.ansible.system](roles/system/README.md)                       | System-related tasks such as reboot handler or reboot when required handler.                                                               |                                |
 | [xebis.ansible.tmpfs](roles/tmpfs/README.md)                         | Sets to mount directories as tmpfs during startup.                                                                                         | `xebis.ansible.system`         |
 | [`xebis.ansible.users`](roles/users/README.md)                       | Ansible role for managing system users.                                                                                                    | `xebis.ansible.openssh_server` |
+| `xebis.ansible.visual_studio_code`                                   | Microsoft Visual Studio Code (Stable)                                                                                                      | `xebis.ansible.apt`            |
 
 ## Installation and Configuration
 
