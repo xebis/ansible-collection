@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.13.0](https://github.com/xebis/ansible-collection/compare/v0.12.0...v0.13.0) (2025-08-24)
+
+### Features
+
+* add visual studio code role ([473025e](https://github.com/xebis/ansible-collection/commit/473025eea65f3d1012bac0dd88acf5ac4e8ff2dd))
+
 ## [0.12.0](https://github.com/xebis/ansible-collection/compare/v0.11.0...v0.12.0) (2025-08-23)
 
 ### Features
