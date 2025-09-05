@@ -1,0 +1,52 @@
+---
+- name: Install git
+  become: true
+  ansible.builtin.apt:
+    name: git
+    state: latest
+
+- name: Set up git user name
+  community.general.git_config:
+    name: user.name
+    value: Martin Bruzina
+    scope: global
+    state: present
+
+- name: Set up git user email
+  community.general.git_config:
+    name: user.email
+    value: martin@bruzina.cz
+    scope: global
+    state: present
+
+- name: Create Projects directory
+  ansible.builtin.file:
+    path: "~/Projects"
+    state: directory
+    mode: '0755'
+
+- name: Create owner directory
+  ansible.builtin.file:
+    path: "~/Projects/{{ item.owner }}"
+    state: directory
+    mode: "0755"
+  loop: "{{ repositories }}"
+  loop_control:
+    label: "{{ item.owner }}/{{ item.name }}"
+
+- name: Add GitHub.com to known hosts
+  ansible.builtin.known_hosts:
+    name: github.com
+    key: "{{ lookup('pipe', 'ssh-keyscan github.com') }}"
+    hash_host: true
+    state: present
+
+- name: Clone repository (only if not already cloned)
+  ansible.builtin.git:
+    repo: "git@github.com:{{ item.owner }}/{{ item.name }}"
+    dest: "~/Projects/{{ item.owner }}/{{ item.name }}"
+    version: HEAD
+    update: no
+  loop: "{{ repositories }}"
+  loop_control:
+    label: "{{ item.owner }}/{{ item.name }}"

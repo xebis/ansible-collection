@@ -32,4 +32,19 @@
     - role: xebis.ansible.google_chrome
     - role: xebis.ansible.obsidian
     - role: xebis.ansible.openssh_client
+    - role: xebis.ansible.coding_projects
+      vars:
+        repositories:
+          - owner: xebis
+            name: .github
+          - owner: xebis
+            name: ansible-collection
+          - owner: xebis
+            name: github-actions-and-workflows
+          - owner: xebis
+            name: github-organization-as-code
+          - owner: xebis
+            name: hetzner-iac-cac
+          - owner: xebis
+            name: infra
     - role: xebis.ansible.visual_studio_code
