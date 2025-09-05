@@ -1,0 +1,12 @@
+---
+- name: Install OpenSSH client
+  become: true
+  ansible.builtin.apt:
+    name: openssh-client
+    state: present
+
+- name: Create SSH keys
+  community.crypto.openssh_keypair:
+    path: ~/.ssh/id_rsa
+    comment: "{{ ansible_user_id }}@{{ ansible_hostname }}.xeb.is"
+    state: present
