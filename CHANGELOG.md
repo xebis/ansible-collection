@@ -1,5 +1,15 @@
 # Changelog
 
+## [0.16.0](https://github.com/xebis/ansible-collection/compare/v0.15.0...v0.16.0) (2025-09-06)
+
+### Features
+
+* add kde role ([7a02ace](https://github.com/xebis/ansible-collection/commit/7a02acea0e2145adf8f8c9a59f7f5d168ca4ae8a))
+
+### Bug Fixes
+
+* apt handler sometimes fails on undefined upgrade variable ([aa854f5](https://github.com/xebis/ansible-collection/commit/aa854f54a29ae489e259bdbe9d0d99904fe33c08))
+
 ## [0.15.0](https://github.com/xebis/ansible-collection/compare/v0.14.0...v0.15.0) (2025-09-06)
 
 ### Features
