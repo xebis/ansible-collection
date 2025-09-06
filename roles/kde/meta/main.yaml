@@ -1,0 +1,4 @@
+---
+dependencies:
+  - role: xebis.ansible.apt # Expects updated apt cache
+  - role: xebis.ansible.nftables_firewall # Expects extensible nftables firewall
