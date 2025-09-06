@@ -1,0 +1,20 @@
+---
+- name: Import firewall tasks
+  ansible.builtin.import_tasks: firewall.yaml
+
+- name: Install KDE packages
+  become: true
+  ansible.builtin.apt:
+    name:
+      - kdeconnect
+      - kdiff3 # Krusader recommended
+      - kget # Krusader recommended
+      - krename # Krusader recommended
+      - krusader
+    state: present
+
+- name: Copy Plasma Reload desktop file
+  ansible.builtin.copy:
+    src: Plasma-Reload.desktop
+    dest: ~/Desktop/Plasma Reload.desktop
+    mode: u=rwx,g=,o=
