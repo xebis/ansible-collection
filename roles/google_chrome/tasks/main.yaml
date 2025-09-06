@@ -11,10 +11,13 @@
     repo: deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main
     state: present
     filename: google-chrome
+  notify: Update deb packages
+
+- name: Enforce upgrade and reboot now rather than at the end of the playbook
+  ansible.builtin.meta: flush_handlers
 
 - name: Install stable Google Chrome
   become: true
   ansible.builtin.apt:
     name: "google-chrome-stable"
     state: latest
-    update_cache: true

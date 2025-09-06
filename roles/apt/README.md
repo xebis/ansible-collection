@@ -46,3 +46,5 @@ Example play, equivalent to `apt update && apt full-upgrade -y && apt autoremove
 
 - `Upgrade deb packages`
   - Upgrades installed packages when the upgrade variable is set to "yes", "safe", "full", or "dist".
+- `Update deb packages`
+  - Updates apt cache
