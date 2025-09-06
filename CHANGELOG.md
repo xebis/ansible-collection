@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.17.0](https://github.com/xebis/ansible-collection/compare/v0.16.0...v0.17.0) (2025-09-06)
+
+### Features
+
+* add direnv role ([911c711](https://github.com/xebis/ansible-collection/commit/911c711c53bd388b576b3ce1a72a73b3d6587cc1))
+
 ## [0.16.0](https://github.com/xebis/ansible-collection/compare/v0.15.0...v0.16.0) (2025-09-06)
 
 ### Features
