@@ -8,3 +8,9 @@
     upgrade: "{{ upgrade | default(omit) }}"
   listen: Upgrade deb packages
   notify: Reboot system when required
+
+- name: Update deb packages cache
+  become: true
+  ansible.builtin.apt:
+    update_cache: yes
+  listen: Update deb packages
