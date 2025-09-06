@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.15.0](https://github.com/xebis/ansible-collection/compare/v0.14.0...v0.15.0) (2025-09-06)
+
+### Features
+
+* add coding projects role ([0b54b65](https://github.com/xebis/ansible-collection/commit/0b54b655210f43691bc23162020bfee9a678831d))
+
 ## [0.14.0](https://github.com/xebis/ansible-collection/compare/v0.13.0...v0.14.0) (2025-09-05)
 
 ### Features
