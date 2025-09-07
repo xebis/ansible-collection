@@ -1,0 +1,16 @@
+---
+- name: Add Ansible PPA
+  become: true
+  ansible.builtin.apt_repository:
+    repo: ppa:ansible/ansible
+    state: present
+  notify: Update deb packages
+
+- name: Enforce upgrade and reboot now rather than at the end of the playbook
+  ansible.builtin.meta: flush_handlers
+
+- name: Install Ansible
+  become: true
+  ansible.builtin.apt:
+    name: ansible
+    state: present
