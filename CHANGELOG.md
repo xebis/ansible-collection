@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.18.0](https://github.com/xebis/ansible-collection/compare/v0.17.0...v0.18.0) (2025-09-07)
+
+### Features
+
+* add docker role ([32515dd](https://github.com/xebis/ansible-collection/commit/32515dd235d99fc8e2db218d4ee74577bb782a1e))
+* add update apt cache handler ([8685e68](https://github.com/xebis/ansible-collection/commit/8685e6807d3ceab59b52ced71badb7ea1a959a13))
+
 ## [0.17.0](https://github.com/xebis/ansible-collection/compare/v0.16.0...v0.17.0) (2025-09-06)
 
 ### Features
