@@ -48,6 +48,7 @@
             name: hetzner-iac-cac
           - owner: xebis
             name: infra
+    - role: xebis.ansible.ansible
     - role: xebis.ansible.direnv
     - role: xebis.ansible.docker
     - role: xebis.ansible.visual_studio_code
