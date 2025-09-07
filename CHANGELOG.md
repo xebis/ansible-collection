@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.19.0](https://github.com/xebis/ansible-collection/compare/v0.18.0...v0.19.0) (2025-09-07)
+
+### Features
+
+* add ansible role ([a6d7a1e](https://github.com/xebis/ansible-collection/commit/a6d7a1e510dc92e2581fb246393f6bf17735e60f))
+
 ## [0.18.0](https://github.com/xebis/ansible-collection/compare/v0.17.0...v0.18.0) (2025-09-07)
 
 ### Features
