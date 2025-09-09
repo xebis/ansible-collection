@@ -7,6 +7,9 @@ System-related tasks such as reboot handler or reboot when required handler.
 - `reboot_timeout` [seconds]
   - Timeout (in seconds) for the system to reboot and become accessible again.
   - Default [ansible.builtin.reboot module parameter reboot_timeout](https://docs.ansible.com/ansible/latest/collections/ansible/builtin/reboot_module.html#parameter-reboot_timeout)
+- `reboot_when_needed` [boolean]
+  - Reboots a system only when true.
+  - Default false
 
 ## Handlers
 
