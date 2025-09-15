@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.20.0](https://github.com/xebis/ansible-collection/compare/v0.19.0...v0.20.0) (2025-09-15)
+
+### Features
+
+* add apt role variable reboot_when_needed ([acc53f1](https://github.com/xebis/ansible-collection/commit/acc53f19a944518ec02bf9f69126c5091b1fdd62))
+
 ## [0.19.0](https://github.com/xebis/ansible-collection/compare/v0.18.0...v0.19.0) (2025-09-07)
 
 ### Features
