@@ -7,7 +7,8 @@ on:
       - main
 
 jobs:
-  call-reusable-release:
+  release:
+    name: Release
     uses: xebis/github-actions-and-workflows/.github/workflows/semantic-release.yaml@v0
     with:
       GH_APP_ID: ${{ vars.GH_APP_SEM_REL_ID }}

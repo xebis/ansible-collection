@@ -6,6 +6,7 @@ plugins:
     - preset: conventionalcommits
   - - "@semantic-release/release-notes-generator"
     - preset: conventionalcommits
+  - "@semantic-release/github"
   - - "@semantic-release/changelog"
     - changelogTitle: '# Changelog'
   - - "@semantic-release/exec"
@@ -14,4 +15,4 @@ plugins:
     - assets:
       - CHANGELOG.md
       - galaxy.yml
-  - "@semantic-release/github"
+  - semantic-release-major-tag
