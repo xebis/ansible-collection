@@ -1,0 +1,7 @@
+---
+- name: Install yq
+  become: true
+  ansible.builtin.apt:
+    name:
+      - yq
+    state: present
