@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.21.0](https://github.com/xebis/ansible-collection/compare/v0.20.0...v0.21.0) (2025-09-23)
+
+### Features
+
+* add yq role ([f956d73](https://github.com/xebis/ansible-collection/commit/f956d7386fa87e354e63112df57b975f54fb0364))
+
 ## [0.20.0](https://github.com/xebis/ansible-collection/compare/v0.19.0...v0.20.0) (2025-09-15)
 
 ### Features
