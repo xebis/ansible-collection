@@ -1,0 +1,7 @@
+---
+- name: Install Midnight Commander
+  become: true
+  ansible.builtin.apt:
+    name:
+      - mc
+    state: present

@@ -29,6 +29,7 @@
             admin: true
             ssh_keys_urls:
               - https://github.com/bruzina.keys
+    - role: xebis.ansible.mc
     - role: xebis.ansible.kde
     - role: xebis.ansible.google_chrome
     - role: xebis.ansible.obsidian
