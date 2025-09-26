@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.22.0](https://github.com/xebis/ansible-collection/compare/v0.21.0...v0.22.0) (2025-09-26)
+
+### Features
+
+* git add mc role ([d813c5b](https://github.com/xebis/ansible-collection/commit/d813c5b0b2126582cc0a38381aa07957609b540c))
+
 ## [0.21.0](https://github.com/xebis/ansible-collection/compare/v0.20.0...v0.21.0) (2025-09-23)
 
 ### Features
