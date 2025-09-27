@@ -14,3 +14,15 @@
     marker: "# {mark} direnv configuration"
     create: true
     mode: u=rw,g=,o=
+
+- name: Create direnv configuration directory
+  ansible.builtin.file:
+    path: ~/.config/direnv
+    state: directory
+    mode: '0755'
+
+- name: Copy direnv configuration
+  ansible.builtin.copy:
+    src: direnv.toml
+    dest: ~/.config/direnv/direnv.toml
+    mode: u=rw,g=,o=
