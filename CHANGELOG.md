@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.23.0](https://github.com/xebis/ansible-collection/compare/v0.22.0...v0.23.0) (2025-09-27)
+
+### Features
+
+* add direnv configuration ([88b0ac8](https://github.com/xebis/ansible-collection/commit/88b0ac8e2bd60a988877fe1344f5201b9606bd0f))
+
 ## [0.22.0](https://github.com/xebis/ansible-collection/compare/v0.21.0...v0.22.0) (2025-09-26)
 
 ### Features
