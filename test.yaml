@@ -54,3 +54,7 @@
     - role: xebis.ansible.yq
     - role: xebis.ansible.docker
     - role: xebis.ansible.visual_studio_code
+      vars:
+        extensions:
+          - davidanson.vscode-markdownlint
+          - mkhl.direnv
