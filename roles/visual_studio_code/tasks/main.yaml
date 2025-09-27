@@ -19,3 +19,7 @@
     name: code
     state: latest
     update_cache: true
+
+- name: Install Visual Studio Code extensions
+  ansible.builtin.shell: code --list-extensions | grep "{{ item }}" || code --install-extension "{{ item }}"
+  loop: "{{ extensions }}"
