@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.24.0](https://github.com/xebis/ansible-collection/compare/v0.23.0...v0.24.0) (2025-09-28)
+
+### Features
+
+* add visual studio role extensions installation ([88d5ab1](https://github.com/xebis/ansible-collection/commit/88d5ab137ddfac5b0ea13a6b8b16d95cc4543bc5))
+
 ## [0.23.0](https://github.com/xebis/ansible-collection/compare/v0.22.0...v0.23.0) (2025-09-27)
 
 ### Features
