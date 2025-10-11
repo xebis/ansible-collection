@@ -1,0 +1,7 @@
+---
+- name: Install htop
+  become: true
+  ansible.builtin.apt:
+    name:
+      - htop
+    state: present
