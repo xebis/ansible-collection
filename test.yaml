@@ -51,10 +51,13 @@
             name: infra
     - role: xebis.ansible.ansible
     - role: xebis.ansible.direnv
+    - role: xebis.ansible.terraform
     - role: xebis.ansible.yq
     - role: xebis.ansible.docker
     - role: xebis.ansible.visual_studio_code
       vars:
         extensions:
           - davidanson.vscode-markdownlint
+          - HashiCorp.terraform
           - mkhl.direnv
+          - oderwat.indent-rainbow
