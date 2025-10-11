@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.25.0](https://github.com/xebis/ansible-collection/compare/v0.24.0...v0.25.0) (2025-10-11)
+
+### Features
+
+* add terraform role ([76166f7](https://github.com/xebis/ansible-collection/commit/76166f7fb85ef1f6fc5dc97295cd6dc82606263e))
+
 ## [0.24.0](https://github.com/xebis/ansible-collection/compare/v0.23.0...v0.24.0) (2025-09-28)
 
 ### Features
