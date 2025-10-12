@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.26.0](https://github.com/xebis/ansible-collection/compare/v0.25.0...v0.26.0) (2025-10-12)
+
+### Features
+
+* add role htop ([a6a1ba8](https://github.com/xebis/ansible-collection/commit/a6a1ba87444a4b03624cdc9b67abb3a84d58c7f3))
+
 ## [0.25.0](https://github.com/xebis/ansible-collection/compare/v0.24.0...v0.25.0) (2025-10-11)
 
 ### Features
