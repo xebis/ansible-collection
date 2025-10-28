@@ -62,4 +62,4 @@
           - HashiCorp.terraform
           - mkhl.direnv
           - oderwat.indent-rainbow
-    - role: xebis.ansible.flatpak
+    - role: xebis.ansible.widelands

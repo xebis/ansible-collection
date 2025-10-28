@@ -1,0 +1,11 @@
+---
+- name: Copy Widelands firewall rules
+  become: true
+  ansible.builtin.copy:
+    src: "{{ item }}"
+    dest: /etc/nftables/{{ item }}
+    mode: u=rw,g=r,o=r
+  with_items:
+    - inet-in-widelands.conf
+    - inet-out-widelands.conf
+  notify: Validate and reload nftables firewall

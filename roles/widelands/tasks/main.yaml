@@ -1,0 +1,16 @@
+---
+- name: Import firewall tasks
+  ansible.builtin.import_tasks: firewall.yaml
+
+- name: Add Flatpak remote repository
+  community.general.flatpak_remote:
+    name: flathub
+    flatpakrepo_url: https://flathub.org/repo/flathub.flatpakrepo
+    method: user
+    state: present
+
+- name: Install Widelands flatpak package
+  community.general.flatpak:
+    name: org.widelands.Widelands
+    method: user
+    state: present
