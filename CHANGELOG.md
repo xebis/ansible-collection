@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.27.0](https://github.com/xebis/ansible-collection/compare/v0.26.0...v0.27.0) (2025-10-28)
+
+### Features
+
+* add flatpak role ([239478b](https://github.com/xebis/ansible-collection/commit/239478b8d46e7b3bb8639d077a3020d4755ab7cc))
+* add widelands role ([9f79538](https://github.com/xebis/ansible-collection/commit/9f795384796376e7c7dc96a7b91cfe3fb100c708))
+
 ## [0.26.0](https://github.com/xebis/ansible-collection/compare/v0.25.0...v0.26.0) (2025-10-12)
 
 ### Features
