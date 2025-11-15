@@ -1,0 +1,3 @@
+---
+dependencies:
+  - role: xebis.ansible.apt # Expects updated apt cache

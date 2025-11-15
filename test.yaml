@@ -30,6 +30,7 @@
             ssh_keys_urls:
               - https://github.com/bruzina.keys
     - role: xebis.ansible.htop
+    - role: xebis.ansible.lm_sensors
     - role: xebis.ansible.mc
     - role: xebis.ansible.kde
     - role: xebis.ansible.google_chrome
