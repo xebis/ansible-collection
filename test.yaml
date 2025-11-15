@@ -32,6 +32,7 @@
     - role: xebis.ansible.htop
     - role: xebis.ansible.mc
     - role: xebis.ansible.kde
+    - role: xebis.ansible.plasma_wayland
     - role: xebis.ansible.google_chrome
     - role: xebis.ansible.obsidian
     - role: xebis.ansible.openssh_client
