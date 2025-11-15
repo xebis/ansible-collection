@@ -1,0 +1,7 @@
+---
+- name: Install plasma-workspace-wayland
+  become: true
+  ansible.builtin.apt:
+    name:
+      - plasma-workspace-wayland
+    state: present
